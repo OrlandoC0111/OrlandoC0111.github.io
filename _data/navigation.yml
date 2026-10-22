@@ -1,0 +1,28 @@
+# The order of the links in the header of the website.
+# To bring back a section (e.g. Teaching or Blog Posts), add it here again:
+#   - title: "Teaching"
+#     url: /teaching/
+#   - title: "Blog Posts"
+#     url: /year-archive/
+
+main:
+  - title: "Research"
+    url: /research/
+
+  - title: "Publications"
+    url: /publications/
+
+  - title: "Presentations"
+    url: /talks/
+
+  - title: "CV"
+    url: /cv/
+
+  - title: "Travel"
+    url: /travel/
+
+  - title: "Photography"
+    url: /photography/
+
+  - title: "Cycling"
+    url: /cycling/

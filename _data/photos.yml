@@ -1,0 +1,13 @@
+# Photos for the Photography page, shown in this order.
+# Put the image files in images/photography/ (long side ~2000 px, under ~1 MB each).
+#
+#   - file: kyoto-2023.jpg          # required: name of the file in images/photography/
+#     title: Fushimi Inari at dawn  # optional caption title
+#     place: Kyoto, Japan           # optional
+#     year: 2023                    # optional
+#     camera: Fujifilm X-T4         # optional
+#     lat: 34.9671                  # optional: lat/lon also put a camera pin on the Travel map
+#     lon: 135.7727
+#
+# TODO: replace the empty list below with your photos.
+photos: []

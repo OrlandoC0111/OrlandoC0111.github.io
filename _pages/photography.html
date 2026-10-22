@@ -1,0 +1,37 @@
+---
+layout: single
+title: "Photography"
+permalink: /photography/
+author_profile: true
+---
+
+{% include base_path %}
+<link rel="stylesheet" href="{{ base_path }}/assets/css/life.css">
+
+<!-- TODO: say what you like to shoot and with what camera. -->
+<p>Photos I have taken around the world. Click any photo to see it larger; use the arrow keys to browse.</p>
+
+{% assign photos = site.data.photos.photos %}
+{% if photos.size == 0 %}
+<p class="life-empty">Photos coming soon.</p>
+{% else %}
+<div class="life-gallery">
+  {% for ph in photos %}
+  {% capture cap %}{% if ph.title %}{{ ph.title }}{% endif %}{% if ph.place %}{% if ph.title %} · {% endif %}{{ ph.place }}{% endif %}{% if ph.year %}, {{ ph.year }}{% endif %}{% endcapture %}
+  <figure class="life-gallery__item">
+    <a href="{{ base_path }}/images/photography/{{ ph.file }}" data-caption="{{ cap | strip | escape }}{% if ph.camera %} — {{ ph.camera | escape }}{% endif %}">
+      <img src="{{ base_path }}/images/photography/{{ ph.file }}" alt="{{ cap | strip | default: 'Photograph' | escape }}" loading="lazy">
+    </a>
+    {% if cap != "" %}<figcaption>{{ cap | strip }}</figcaption>{% endif %}
+  </figure>
+  {% endfor %}
+</div>
+{% endif %}
+
+<div class="life-lightbox" id="life-lightbox" hidden>
+  <button class="life-lightbox__btn life-lightbox__close" aria-label="Close">&times;</button>
+  <button class="life-lightbox__btn life-lightbox__prev" aria-label="Previous photo">&#8249;</button>
+  <figure><img alt=""><figcaption></figcaption></figure>
+  <button class="life-lightbox__btn life-lightbox__next" aria-label="Next photo">&#8250;</button>
+</div>
+<script src="{{ base_path }}/assets/js/life-gallery.js"></script>

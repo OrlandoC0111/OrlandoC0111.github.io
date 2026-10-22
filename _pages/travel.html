@@ -1,0 +1,38 @@
+---
+layout: single
+title: "Travel"
+permalink: /travel/
+author_profile: true
+---
+
+{% include base_path %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="{{ base_path }}/assets/css/life.css">
+
+<!-- TODO: write a sentence or two about why you travel / what you look for. -->
+<p>Places I have lived, worked, ridden and wandered through. Shaded countries are ones I have visited; click a pin for the story.</p>
+
+<div class="life-stats">
+  <div><span class="life-stats__num" id="travel-n-countries">{{ site.data.travel.countries | size }}</span><span class="life-stats__label">countries &amp; regions</span></div>
+  <div><span class="life-stats__num">{{ site.data.travel.places | size }}</span><span class="life-stats__label">places pinned</span></div>
+</div>
+
+<div id="travel-map" class="life-map" role="img" aria-label="World map of places Orlando has visited"></div>
+<p class="life-map__legend"><span class="life-swatch life-swatch--visited"></span> visited <span class="life-dot"></span> place <span class="life-dot life-dot--photo"></span> photo</p>
+
+{% assign places_by_country = site.data.travel.places | group_by: "country" %}
+{% for group in places_by_country %}
+<h3 class="life-country">{{ group.name }}</h3>
+<ul class="life-places">
+  {% for p in group.items %}
+  <li><strong>{{ p.name }}</strong>{% if p.when %} <span class="life-muted">· {{ p.when }}</span>{% endif %}{% if p.note %} — {{ p.note }}{% endif %}</li>
+  {% endfor %}
+</ul>
+{% endfor %}
+
+<script type="application/json" id="travel-data">{{ site.data.travel | jsonify }}</script>
+<script type="application/json" id="photo-data">{{ site.data.photos.photos | jsonify }}</script>
+<script>window.LIFE_BASE = "{{ base_path }}";</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+<script src="{{ base_path }}/assets/js/life-maps.js"></script>

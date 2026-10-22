@@ -1,0 +1,33 @@
+# Places I have been. Edit this file to update the map on the Travel page.
+
+# 1) Countries/regions to shade on the map.
+#    Plain English names work (case does not matter; USA, UK, Korea etc. are understood).
+#    The exact spellings the map knows are listed in assets/data/country-names.txt.
+countries:
+  - United States of America
+  # TODO: add every country/region you have visited, one per line, e.g.
+  # - China
+  # - Japan
+
+# 2) Specific places, shown as pins.
+#    lat/lon: right-click the spot in Google Maps and click the numbers to copy them.
+#    Optional: when, note, photo (a file in images/photography/, shown in the pop-up).
+places:
+  - name: Blacksburg, Virginia
+    country: United States of America
+    lat: 37.2296
+    lon: -80.4139
+    when:   # TODO e.g. 2024–present
+    note: Home base at Virginia Tech
+  - name: Warsaw, Virginia
+    country: United States of America
+    lat: 37.9585
+    lon: -76.7580
+    note: Coastal Plain field site for my soybean research
+  # TODO: add more, e.g.
+  # - name: Kyoto
+  #   country: Japan
+  #   lat: 35.0116
+  #   lon: 135.7681
+  #   when: 2023
+  #   note: Temples in the rain

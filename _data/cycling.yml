@@ -1,0 +1,17 @@
+# Rides and cycling trips for the Cycling page, newest first.
+#
+#   - title: Blue Ridge Parkway, Roanoke to Blacksburg  # required
+#     date: 2025-06-14                                  # YYYY-MM-DD
+#     distance_km: 112                                  # optional, shown in km and miles
+#     elevation_m: 1850                                 # optional climbing, shown in m and ft
+#     days: 1                                           # optional, for multi-day tours
+#     region: Virginia, USA
+#     bike: Road bike                                   # optional
+#     link: https://www.strava.com/activities/...       # optional (Strava, RideWithGPS, Komoot)
+#     photo: brp-2025.jpg                               # optional, file in images/photography/
+#     gpx: brp-2025.gpx                                 # optional, file in files/gpx/, drawn on the route map
+#     story: >-                                         # optional, a few sentences
+#       Headwind for 60 km, then the best descent of the year.
+#
+# TODO: replace the empty list below with your rides.
+rides: []

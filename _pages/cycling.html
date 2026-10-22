@@ -1,0 +1,59 @@
+---
+layout: single
+title: "Cycling"
+permalink: /cycling/
+author_profile: true
+---
+
+{% include base_path %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="{{ base_path }}/assets/css/life.css">
+
+<!-- TODO: a few sentences on how you got into cycling, what you ride, favourite roads. -->
+<p>Cycling is how I explore a new place: slowly enough to see it, fast enough to get somewhere.</p>
+
+{% assign rides = site.data.cycling.rides %}
+{% if rides.size == 0 %}
+<p class="life-empty">Ride stories coming soon.</p>
+{% else %}
+{% assign total_km = 0 %}{% assign total_m = 0 %}
+{% for r in rides %}{% assign total_km = total_km | plus: r.distance_km %}{% assign total_m = total_m | plus: r.elevation_m %}{% endfor %}
+<div class="life-stats">
+  <div><span class="life-stats__num">{{ rides | size }}</span><span class="life-stats__label">rides &amp; trips</span></div>
+  <div><span class="life-stats__num">{{ total_km | round }}</span><span class="life-stats__label">km ({{ total_km | times: 0.621371 | round }} mi)</span></div>
+  <div><span class="life-stats__num">{{ total_m | round }}</span><span class="life-stats__label">m climbed ({{ total_m | times: 3.28084 | round }} ft)</span></div>
+</div>
+
+{% assign with_gpx = rides | where_exp: "r", "r.gpx" %}
+{% if with_gpx.size > 0 %}
+<div id="ride-map" class="life-map" role="img" aria-label="Map of cycling routes"></div>
+{% endif %}
+
+<div class="life-rides">
+  {% for r in rides %}
+  <article class="life-ride" id="ride-{{ forloop.index }}">
+    {% if r.photo %}<img class="life-ride__photo" src="{{ base_path }}/images/photography/{{ r.photo }}" alt="{{ r.title | escape }}" loading="lazy">{% endif %}
+    <div class="life-ride__body">
+      <h3 class="life-ride__title">{% if r.gpx %}<span class="life-ride__swatch" data-ride="{{ forloop.index }}"></span>{% endif %}{{ r.title }}</h3>
+      <p class="life-ride__meta">
+        {% if r.date %}{{ r.date | date: "%B %Y" }}{% endif %}
+        {% if r.region %} · {{ r.region }}{% endif %}
+        {% if r.days and r.days > 1 %} · {{ r.days }} days{% endif %}
+      </p>
+      <p class="life-ride__numbers">
+        {% if r.distance_km %}<span><strong>{{ r.distance_km }}</strong> km ({{ r.distance_km | times: 0.621371 | round }} mi)</span>{% endif %}
+        {% if r.elevation_m %}<span><strong>{{ r.elevation_m }}</strong> m climbed ({{ r.elevation_m | times: 3.28084 | round }} ft)</span>{% endif %}
+        {% if r.bike %}<span>{{ r.bike }}</span>{% endif %}
+      </p>
+      {% if r.story %}<p>{{ r.story }}</p>{% endif %}
+      {% if r.link %}<p><a href="{{ r.link }}">Route &amp; ride details</a></p>{% endif %}
+    </div>
+  </article>
+  {% endfor %}
+</div>
+
+<script type="application/json" id="ride-data">{{ rides | jsonify }}</script>
+<script>window.LIFE_BASE = "{{ base_path }}";</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="{{ base_path }}/assets/js/life-maps.js"></script>
+{% endif %}
