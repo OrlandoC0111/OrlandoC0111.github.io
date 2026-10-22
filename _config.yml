@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Orlando Chen"
 title_separator          : "-"
 name                     : &name "Orlando Chen"
-description              : &description "Orlando Chen - soil and rhizosphere microbial ecology, Virginia Tech"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Orlando Chen - machine learning for biology, data science, soil microbiology and remote sensing, Virginia Tech"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://orlandoc0111.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,7 +26,7 @@ author:
   avatar           : "profile.png"
   name             : "Orlando Chen"
   pronouns         : # example: "she/her"  
-  bio              : "Soil & rhizosphere microbial ecology · cycling · photography"
+  bio              : "Machine Learning for Bio · Data Science · Soil Microbiology · Remote Sensing"
   location         : "Blacksburg, VA"
   employer         : "Virginia Tech, School of Plant and Environmental Sciences"
   uri              : # URL

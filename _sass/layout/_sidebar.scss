@@ -307,6 +307,13 @@
     white-space: nowrap;
   }
 
+  // Let a long employer name wrap under itself instead of being cut off
+  li.author__desktop {
+    display: flex;
+    align-items: baseline;
+    white-space: normal;
+  }
+
   a {
     display: block;
     margin-bottom: 5px;
