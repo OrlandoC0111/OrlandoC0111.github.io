@@ -87,5 +87,12 @@ places:
   - {name: Taipei, country: Taiwan, lat: 25.0330, lon: 121.5654, status: favorite}
   - {name: Alishan, country: Taiwan, lat: 23.5100, lon: 120.8020, status: favorite}
   - {name: Hualien, country: Taiwan, lat: 23.9769, lon: 121.6044, status: favorite}
+  - {name: Keelung, country: Taiwan, lat: 25.1276, lon: 121.7392, status: favorite}
+  - {name: Changhua, country: Taiwan, lat: 24.0518, lon: 120.5161, status: favorite}
+  - {name: Chiayi, country: Taiwan, lat: 23.4801, lon: 120.4491, status: favorite}
+  - {name: Tainan, country: Taiwan, lat: 22.9999, lon: 120.2270, status: favorite}
+  - {name: Kaohsiung, country: Taiwan, lat: 22.6273, lon: 120.3014, status: favorite}
+  - {name: Kenting, country: Taiwan, lat: 21.9466, lon: 120.7984, status: favorite}
+  - {name: Taitung, country: Taiwan, lat: 22.7583, lon: 121.1444, status: favorite}
   # Qatar
   - {name: Doha, country: Qatar, lat: 25.2854, lon: 51.5310, status: visited}
