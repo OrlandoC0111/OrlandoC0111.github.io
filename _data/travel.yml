@@ -67,6 +67,7 @@ places:
   - {name: Vancouver, region: British Columbia, country: Canada, lat: 49.2827, lon: -123.1207, status: visited}
   # China
   - {name: Jinan, region: Shandong, country: China, lat: 36.6512, lon: 117.1201, status: born, note: Where I was born and grew up}
+  - {name: Mount Tai, region: Shandong, country: China, lat: 36.2547, lon: 117.1008, status: visited, note: 泰山}
   - {name: Hangzhou, region: Zhejiang, country: China, lat: 30.2741, lon: 120.1551, status: lived, when: 2019–2021, note: Zhejiang University}
   - {name: Beijing, country: China, lat: 39.9042, lon: 116.4074, status: visited}
   - {name: Nanjing, region: Jiangsu, country: China, lat: 32.0603, lon: 118.7969, status: visited}
