@@ -1,13 +1,29 @@
 # Photos for the Photography page, shown in this order.
-# Put the image files in images/photography/ (long side ~2000 px, under ~1 MB each).
-#
-#   - file: kyoto-2023.jpg          # required: name of the file in images/photography/
-#     title: Fushimi Inari at dawn  # optional caption title
-#     place: Kyoto, Japan           # optional
-#     year: 2023                    # optional
-#     camera: Fujifilm X-T4         # optional
-#     lat: 34.9671                  # optional: lat/lon also put a camera pin on the Travel map
-#     lon: 135.7727
-#
-# TODO: replace the empty list below with your photos.
-photos: []
+# Full-size files live in images/photography/ (long side 2000 px), thumbnails in images/photography/thumbs/.
+# To add one: send it to Claude, or resize it yourself and add an entry like these.
+#   file:    file name (same name in both folders)
+#   w, h:    thumbnail size in pixels (keeps the grid from jumping while it loads)
+#   at:      name of a pin in _data/travel.yml; the photo then shows in that pin's pop-up
+#   country: used by the filter buttons
+photos:
+  - {file: seattle-kerry-park.jpg, w: 900, h: 508, title: The Emerald City and Mount Rainier, place: "Kerry Park, Seattle", year: 2025, at: Seattle, country: United States, camera: Nikon Z8}
+  - {file: nyc-manhattan-bridge.jpg, w: 600, h: 900, title: Manhattan Bridge from DUMBO, place: "Brooklyn, New York", year: 2026, at: New York City, country: United States, camera: Nikon Z8}
+  - {file: nyc-432-park-sunset.jpg, w: 600, h: 900, title: Last light on Midtown, place: "Manhattan, New York", year: 2026, at: New York City, country: United States, camera: Nikon Z8}
+  - {file: ithaca-sage-hall.jpg, w: 600, h: 900, title: Sage Hall in summer, place: "Cornell University, Ithaca", year: 2026, at: Ithaca, country: United States, camera: Fujifilm X-T5}
+  - {file: yosemite-tunnel-view.jpg, w: 900, h: 600, title: Tunnel View, place: "Yosemite, California", year: 2025, at: Yosemite, country: United States, camera: Nikon Z8}
+  - {file: big-sur.jpg, w: 600, h: 900, title: Where the mountains meet the Pacific, place: "Big Sur, California", year: 2025, at: Big Sur, country: United States, camera: Nikon Z8}
+  - {file: oregon-haystack-rock.jpg, w: 900, h: 506, title: Haystack Rock, place: "Cannon Beach, Oregon", year: 2025, at: Cannon Beach, country: United States, camera: Nikon Z8}
+  - {file: oregon-coast-fog.jpg, w: 900, h: 600, title: Sea fog on the Oregon Coast, place: "Cannon Beach, Oregon", year: 2025, at: Cannon Beach, country: United States, camera: Nikon Z8}
+  - {file: oregon-multnomah-falls.jpg, w: 506, h: 900, title: Multnomah Falls, place: "Columbia River Gorge, Oregon", year: 2026, at: Multnomah Falls, country: United States, camera: Nikon Z8}
+  - {file: quebec-chateau-frontenac.jpg, w: 600, h: 900, title: Château Frontenac at blue hour, place: "Québec City", year: 2026, at: Québec City, country: Canada, camera: Nikon Z8}
+  - {file: quebec-petit-champlain.jpg, w: 900, h: 600, title: Petit-Champlain under winter lights, place: "Québec City", year: 2026, at: Québec City, country: Canada, camera: Nikon Z8}
+  - {file: montreal-notre-dame.jpg, w: 900, h: 612, title: Notre-Dame Basilica, place: "Montréal", year: 2026, at: Montréal, country: Canada, camera: Nikon Z8}
+  - {file: montreal-mount-royal.jpg, w: 900, h: 600, title: Montréal from Mount Royal, place: "Montréal", year: 2026, at: Montréal, country: Canada, camera: Nikon Z8}
+  - {file: toronto-cn-tower.jpg, w: 600, h: 900, title: CN Tower from Front Street, place: "Toronto", year: 2026, at: Toronto, country: Canada, camera: Nikon Zf}
+  - {file: jinan-dusk.jpg, w: 900, h: 600, title: Dusk over my hometown, place: "Jinan, Shandong", year: 2025, at: Jinan, country: China, camera: Nikon Z8}
+  - {file: xiamen-gulangyu.jpg, w: 900, h: 600, title: Red roofs of Gulangyu, place: "Xiamen, Fujian", year: 2025, at: Xiamen, country: China, camera: Nikon Z8}
+  - {file: final-approach.jpg, w: 600, h: 900, title: Final approach over the temple roof, place: "Xiamen, Fujian", year: 2025, at: Xiamen, country: China, camera: Nikon Z8}
+  - {file: taipei-101.jpg, w: 900, h: 599, title: Taipei 101 from Elephant Mountain, place: "Taipei", year: 2025, at: Taipei, country: Taiwan, camera: Nikon Z8}
+  - {file: taiwan-alishan-railway.jpg, w: 600, h: 900, title: Alishan Forest Railway in the mist, place: "Alishan", year: 2025, at: Alishan, country: Taiwan, camera: Nikon Z8}
+  - {file: taiwan-hualien-beach.jpg, w: 900, h: 547, title: By the Pacific, place: "Hualien", year: 2025, at: Hualien, country: Taiwan, camera: Nikon Z8}
+  - {file: taiwan-spinner-dolphin.jpg, w: 900, h: 681, title: Spinner dolphin, place: "Off the coast of Hualien", year: 2025, at: Hualien, country: Taiwan, camera: Nikon Z8}

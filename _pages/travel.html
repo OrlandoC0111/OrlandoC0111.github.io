@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Travel"
+title: "Ten Thousand Miles"
 permalink: /travel/
 author_profile: true
 ---
@@ -9,26 +9,47 @@ author_profile: true
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <link rel="stylesheet" href="{{ base_path }}/assets/css/life.css">
 
-<!-- TODO: write a sentence or two about why you travel / what you look for. -->
-<p>Places I have lived, worked, ridden and wandered through. Shaded countries are ones I have visited; click a pin for the story.</p>
+<blockquote class="life-epigraph">
+  <p lang="zh">读万卷书，行万里路。</p>
+  <p>Read ten thousand books, walk ten thousand miles.</p>
+  <cite>Chinese proverb</cite>
+</blockquote>
 
-<div class="life-stats">
-  <div><span class="life-stats__num" id="travel-n-countries">{{ site.data.travel.countries | size }}</span><span class="life-stats__label">countries &amp; regions</span></div>
+<p>From Jinan to Hangzhou, Ithaca, Chapel Hill and now Blacksburg: these are the places I have called home, and the ones I have wandered through along the way. Shaded areas are states, provinces and countries I have been to. Click a pin to see the story and the photos I took there.</p>
+
+<div class="life-stats" id="travel-stats">
+  <div><span class="life-stats__num" data-stat="countries">–</span><span class="life-stats__label">countries &amp; regions</span></div>
+  <div><span class="life-stats__num" data-stat="states">–</span><span class="life-stats__label">states &amp; provinces</span></div>
   <div><span class="life-stats__num">{{ site.data.travel.places | size }}</span><span class="life-stats__label">places pinned</span></div>
 </div>
 
-<div id="travel-map" class="life-map" role="img" aria-label="World map of places Orlando has visited"></div>
-<p class="life-map__legend"><span class="life-swatch life-swatch--visited"></span> visited <span class="life-dot"></span> place <span class="life-dot life-dot--photo"></span> photo</p>
+<div id="travel-map" class="life-map life-map--tall" role="img" aria-label="World map of the places Orlando has lived and visited"></div>
+<p class="life-map__legend">
+  <span class="life-swatch life-swatch--lived"></span> lived
+  <span class="life-swatch life-swatch--visited"></span> visited
+  <span class="life-swatch life-swatch--favorite"></span> favorite
+  <span class="life-dot life-dot--lived"></span> home
+  <span class="life-dot life-dot--visited"></span> visited
+  <span class="life-dot life-dot--favorite"></span> favorite
+</p>
 
 {% assign places_by_country = site.data.travel.places | group_by: "country" %}
+<div class="life-places-grid">
 {% for group in places_by_country %}
-<h3 class="life-country">{{ group.name }}</h3>
-<ul class="life-places">
-  {% for p in group.items %}
-  <li><strong>{{ p.name }}</strong>{% if p.when %} <span class="life-muted">· {{ p.when }}</span>{% endif %}{% if p.note %} — {{ p.note }}{% endif %}</li>
-  {% endfor %}
-</ul>
+  <section>
+    <h3 class="life-country">{{ group.name }}</h3>
+    <ul class="life-places">
+      {% for p in group.items %}
+      <li>
+        <strong>{{ p.name }}</strong>{% if p.region and p.region != p.name %}<span class="life-muted">, {{ p.region }}</span>{% endif %}
+        {% if p.status == "born" %}<span class="life-badge life-badge--lived">born here</span>{% elsif p.status == "lived" %}<span class="life-badge life-badge--lived">lived{% if p.when %} {{ p.when }}{% endif %}</span>{% elsif p.status == "favorite" %}<span class="life-badge life-badge--favorite">♥ favorite</span>{% endif %}
+        {% if p.note %}<span class="life-muted"> — {{ p.note }}</span>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
 {% endfor %}
+</div>
 
 <script type="application/json" id="travel-data">{{ site.data.travel | jsonify }}</script>
 <script type="application/json" id="photo-data">{{ site.data.photos.photos | jsonify }}</script>

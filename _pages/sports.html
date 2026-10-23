@@ -1,20 +1,24 @@
 ---
 layout: single
-title: "Cycling"
-permalink: /cycling/
+title: "Sports"
+permalink: /sports/
 author_profile: true
+redirect_from:
+  - /cycling/
 ---
 
 {% include base_path %}
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <link rel="stylesheet" href="{{ base_path }}/assets/css/life.css">
 
-<!-- TODO: a few sentences on how you got into cycling, what you ride, favourite roads. -->
-<p>Cycling is how I explore a new place: slowly enough to see it, fast enough to get somewhere.</p>
+<p>Data and soil keep my mind busy. Sport keeps the rest of me honest. These days that mostly means a road bike, but a basketball court or a soccer pitch has never been far away, and on game day you will find me cheering for the Warriors and Barça.</p>
+
+<h2 id="cycling">On two wheels</h2>
+<p>Road cycling is how I explore a place: slow enough to see it, fast enough to get somewhere. Around Blacksburg that means empty farm roads, long climbs into the Blue Ridge and descents that pay back every pedal stroke. My favorite rides are below.</p>
 
 {% assign rides = site.data.cycling.rides %}
 {% if rides.size == 0 %}
-<p class="life-empty">Ride stories coming soon.</p>
+<p class="life-empty">Ride stories and route maps coming soon.</p>
 {% else %}
 {% assign total_km = 0 %}{% assign total_m = 0 %}
 {% for r in rides %}{% assign total_km = total_km | plus: r.distance_km %}{% assign total_m = total_m | plus: r.elevation_m %}{% endfor %}
@@ -57,3 +61,34 @@ author_profile: true
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script src="{{ base_path }}/assets/js/life-maps.js"></script>
 {% endif %}
+
+<h2 id="court-and-pitch">On the court and the pitch</h2>
+<!-- TODO: add specifics, e.g. teams or leagues, positions, years, intramurals at Cornell/Duke/VT, a favorite moment. -->
+<div class="life-cards">
+  <article class="life-card">
+    <div class="life-card__icon" aria-hidden="true"><i class="fas fa-basketball"></i></div>
+    <h3>Basketball</h3>
+    <p>Pickup runs, the squeak of sneakers on hardwood, and the quiet satisfaction of a clean pass that turns into an easy bucket. Basketball taught me teamwork and how to read a game, and I still play whenever I can find a court and a few people ready to run.</p>
+  </article>
+  <article class="life-card">
+    <div class="life-card__icon" aria-hidden="true"><i class="fas fa-futbol"></i></div>
+    <h3>Soccer</h3>
+    <p>Ninety minutes of running, passing triangles and the rare perfect first touch. I love soccer for its patience: it rewards space, timing and trust in your teammates, much like good research.</p>
+  </article>
+</div>
+
+<h2 id="fandom">In the stands</h2>
+<div class="life-cards">
+  <article class="life-card life-card--team" style="--team-a: #1D428A; --team-b: #FFC72C;">
+    <div class="life-card__stripe" aria-hidden="true"></div>
+    <h3>Golden State Warriors</h3>
+    <p class="life-card__motto">Dub Nation</p>
+    <p>Ball movement, off-ball cutting and threes from well beyond the arc: the Warriors made basketball look like jazz, and they turned me into a lifelong fan.</p>
+  </article>
+  <article class="life-card life-card--team" style="--team-a: #A50044; --team-b: #004D98;">
+    <div class="life-card__stripe" aria-hidden="true"></div>
+    <h3>FC Barcelona</h3>
+    <p class="life-card__motto">Més que un club</p>
+    <p>Tiki-taka, La Masia and the blaugrana: Barça plays soccer the way I like it, possession, patience and moments of pure magic. Visca el Barça!</p>
+  </article>
+</div>

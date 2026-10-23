@@ -1,33 +1,65 @@
-# Places I have been. Edit this file to update the map on the Travel page.
+# Places I have been. This feeds the map on the "Ten Thousand Miles" page (/travel/).
+# status: lived | visited | favorite   (places can also be "born")
 
-# 1) Countries/regions to shade on the map.
-#    Plain English names work (case does not matter; USA, UK, Korea etc. are understood).
-#    The exact spellings the map knows are listed in assets/data/country-names.txt.
+# 1) Whole countries / regions to shade. Names as in assets/data/country-names.txt.
+#    part_of: counts the region under another country in the stats.
 countries:
-  - United States of America
-  # TODO: add every country/region you have visited, one per line, e.g.
-  # - China
-  # - Japan
+  - {name: Taiwan, status: favorite}
+  - {name: Hong Kong, status: visited, part_of: China}
+  - {name: Qatar, status: visited}
 
-# 2) Specific places, shown as pins.
-#    lat/lon: right-click the spot in Google Maps and click the numbers to copy them.
-#    Optional: when, note, photo (a file in images/photography/, shown in the pop-up).
+# 2) States and provinces to shade (United States, Canada, China only).
+#    Names as in assets/data/regions-usa-can-chn.json (e.g. Québec, Tibet, District of Columbia).
+states:
+  United States of America:
+    lived: [New York, North Carolina, Virginia]
+    visited: [Massachusetts, Pennsylvania, District of Columbia, Washington, Oregon, Texas,
+              California, Georgia, Illinois, Wisconsin]
+  Canada:
+    visited: [Québec, Ontario, British Columbia]
+  China:
+    lived: [Shandong, Zhejiang]
+    visited: [Beijing, Henan, Jiangsu, Fujian, Guangdong, Hunan, Hebei, Liaoning, Heilongjiang,
+              Jilin, Qinghai, Gansu, Ningxia, Tibet, Yunnan, Hainan]
+
+# 3) Pins. lat/lon: right-click a spot in Google Maps and click the numbers to copy them.
+#    Photos in _data/photos.yml whose "at" matches a pin's name appear in its pop-up.
 places:
-  - name: Blacksburg, Virginia
-    country: United States of America
-    lat: 37.2296
-    lon: -80.4139
-    when:   # TODO e.g. 2024–present
-    note: Home base at Virginia Tech
-  - name: Warsaw, Virginia
-    country: United States of America
-    lat: 37.9585
-    lon: -76.7580
-    note: Coastal Plain field site for my soybean research
-  # TODO: add more, e.g.
-  # - name: Kyoto
-  #   country: Japan
-  #   lat: 35.0116
-  #   lon: 135.7681
-  #   when: 2023
-  #   note: Temples in the rain
+  # United States
+  - {name: Ithaca, region: New York, country: United States, lat: 42.4440, lon: -76.5019, status: lived, when: 2021–2023, note: Cornell University}
+  - {name: Chapel Hill, region: North Carolina, country: United States, lat: 35.9132, lon: -79.0558, status: lived, when: 2023–2025, note: My Duke years}
+  - {name: Blacksburg, region: Virginia, country: United States, lat: 37.2296, lon: -80.4139, status: lived, when: 2025–present, note: Virginia Tech}
+  - {name: Seattle, region: Washington, country: United States, lat: 47.6062, lon: -122.3321, status: favorite}
+  - {name: Boston, region: Massachusetts, country: United States, lat: 42.3601, lon: -71.0589, status: favorite}
+  - {name: New York City, region: New York, country: United States, lat: 40.7128, lon: -74.0060, status: visited}
+  - {name: Philadelphia, region: Pennsylvania, country: United States, lat: 39.9526, lon: -75.1652, status: visited}
+  - {name: "Washington, DC", country: United States, lat: 38.9072, lon: -77.0369, status: visited}
+  - {name: Atlanta, region: Georgia, country: United States, lat: 33.7490, lon: -84.3880, status: visited}
+  - {name: Chicago, region: Illinois, country: United States, lat: 41.8781, lon: -87.6298, status: visited}
+  - {name: Madison, region: Wisconsin, country: United States, lat: 43.0731, lon: -89.4012, status: visited}
+  - {name: Milwaukee, region: Wisconsin, country: United States, lat: 43.0389, lon: -87.9065, status: visited}
+  - {name: Portland, region: Oregon, country: United States, lat: 45.5152, lon: -122.6784, status: visited}
+  - {name: Multnomah Falls, region: Oregon, country: United States, lat: 45.5762, lon: -122.1158, status: visited}
+  - {name: Cannon Beach, region: Oregon, country: United States, lat: 45.8918, lon: -123.9615, status: visited}
+  - {name: San Francisco, region: California, country: United States, lat: 37.7749, lon: -122.4194, status: visited}
+  - {name: Big Sur, region: California, country: United States, lat: 36.3615, lon: -121.8563, status: visited}
+  - {name: Yosemite, region: California, country: United States, lat: 37.7156, lon: -119.6767, status: visited}
+  - {name: Los Angeles, region: California, country: United States, lat: 34.0522, lon: -118.2437, status: visited}
+  - {name: Warsaw, region: Virginia, country: United States, lat: 37.9585, lon: -76.7580, status: visited, note: Field site for my soybean research}
+  # Canada
+  - {name: Montréal, region: Québec, country: Canada, lat: 45.5019, lon: -73.5674, status: visited}
+  - {name: Québec City, region: Québec, country: Canada, lat: 46.8139, lon: -71.2080, status: visited}
+  - {name: Toronto, region: Ontario, country: Canada, lat: 43.6532, lon: -79.3832, status: visited}
+  - {name: Vancouver, region: British Columbia, country: Canada, lat: 49.2827, lon: -123.1207, status: visited}
+  # China
+  - {name: Jinan, region: Shandong, country: China, lat: 36.6512, lon: 117.1201, status: born, note: Where I was born and grew up}
+  - {name: Hangzhou, region: Zhejiang, country: China, lat: 30.2741, lon: 120.1551, status: lived, when: 2019–2021, note: Zhejiang University}
+  - {name: Beijing, country: China, lat: 39.9042, lon: 116.4074, status: visited}
+  - {name: Xiamen, region: Fujian, country: China, lat: 24.4475, lon: 118.0640, status: visited}
+  - {name: Hong Kong, country: China, lat: 22.3193, lon: 114.1694, status: visited}
+  # Taiwan
+  - {name: Taipei, country: Taiwan, lat: 25.0330, lon: 121.5654, status: favorite}
+  - {name: Alishan, country: Taiwan, lat: 23.5100, lon: 120.8020, status: favorite}
+  - {name: Hualien, country: Taiwan, lat: 23.9769, lon: 121.6044, status: favorite}
+  # Qatar
+  - {name: Doha, country: Qatar, lat: 25.2854, lon: 51.5310, status: visited}

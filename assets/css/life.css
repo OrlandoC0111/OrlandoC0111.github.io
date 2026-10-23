@@ -1,8 +1,10 @@
-/* Styles for the Travel, Photography and Cycling pages.
+/* Styles for the travel, Photography and Sports pages.
    Colours come from the theme's CSS variables so light/dark mode both work. */
-:root { --life-visited: #2f7f93; --life-pin: #861f41; --life-photo: #e5751f;
+:root { --life-lived: #3d8fa3; --life-visited: #a9d3dd; --life-favorite: #f2c27b;
+        --life-pin-lived: #861f41; --life-pin-visited: #2f7f93; --life-pin-favorite: #e5751f;
         --life-land: #dde2e5; --life-ocean: #f4f7f9; --life-map-border: #ffffff; }
-html[data-theme="dark"] { --life-visited: #52adc8; --life-pin: #e06a8f; --life-photo: #f2a65a;
+html[data-theme="dark"] { --life-lived: #4fa6bb; --life-visited: #2c5f6b; --life-favorite: #b9893c;
+        --life-pin-lived: #e06a8f; --life-pin-visited: #7cc6d8; --life-pin-favorite: #f2a65a;
         --life-land: #3b4248; --life-ocean: #1f2428; --life-map-border: #2a2f34; }
 
 .life-stats { display: flex; flex-wrap: wrap; gap: 0.75em; margin: 1em 0 1.25em; }
@@ -16,12 +18,31 @@ html[data-theme="dark"] { --life-visited: #52adc8; --life-pin: #e06a8f; --life-p
 html[data-theme="dark"] #ride-map .leaflet-tile-pane { filter: invert(1) hue-rotate(180deg) brightness(0.9) contrast(0.9); }
 @media (max-width: 600px) { .life-map { height: 320px; } }
 .life-map__legend { font-size: 0.75em; color: var(--global-text-color-light); margin-top: 0.4em; }
-.life-swatch { display: inline-block; width: 0.9em; height: 0.9em; border-radius: 2px; vertical-align: -0.1em; margin-left: 0.6em; }
-.life-swatch--visited { background: var(--life-visited); opacity: 0.6; margin-left: 0; }
-.life-dot { display: inline-block; width: 0.75em; height: 0.75em; border-radius: 50%; background: var(--life-pin); vertical-align: -0.05em; margin-left: 0.8em; border: 2px solid #fff; box-shadow: 0 0 0 1px rgba(0,0,0,.25); }
-.life-dot--photo { background: var(--life-photo); }
+.life-swatch { display: inline-block; width: 0.9em; height: 0.9em; border-radius: 2px; vertical-align: -0.1em; margin: 0 0.25em 0 0.8em; }
+.life-swatch:first-child { margin-left: 0; }
+.life-swatch--lived { background: var(--life-lived); }
+.life-swatch--visited { background: var(--life-visited); }
+.life-swatch--favorite { background: var(--life-favorite); }
+.life-dot { display: inline-block; width: 0.75em; height: 0.75em; border-radius: 50%; vertical-align: -0.05em; margin: 0 0.25em 0 0.8em; border: 2px solid #fff; box-shadow: 0 0 0 1px rgba(0,0,0,.25); }
+.life-dot--lived { background: var(--life-pin-lived); }
+.life-dot--visited { background: var(--life-pin-visited); }
+.life-dot--favorite { background: var(--life-pin-favorite); }
 .leaflet-popup-content { font-size: 0.8rem; line-height: 1.4; }
-.leaflet-popup-content img { display: block; max-width: 220px; border-radius: 4px; margin-top: 0.4em; }
+.life-pop__photos { display: flex; gap: 4px; margin-top: 0.5em; }
+.life-pop__photos img { display: block; width: 96px; height: 72px; object-fit: cover; border-radius: 3px; }
+.life-map--tall { height: 520px; }
+@media (max-width: 600px) { .life-map--tall { height: 340px; } }
+
+.life-epigraph { margin: 0 0 1.2em; padding: 0.6em 1em; border-left: 4px solid var(--life-pin-favorite); }
+.life-epigraph p { margin: 0; }
+.life-epigraph p[lang="zh"] { font-size: 1.25em; letter-spacing: 0.08em; }
+.life-epigraph cite { font-size: 0.75em; color: var(--global-text-color-light); }
+
+.life-places-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 0 1.5em; margin-top: 1em; }
+.life-places li { font-size: 0.85em; margin-bottom: 0.25em; }
+.life-badge { display: inline-block; font-size: 0.72em; padding: 0 0.5em; border-radius: 999px; margin-left: 0.3em; white-space: nowrap; vertical-align: 0.1em; }
+.life-badge--lived { background: var(--life-pin-lived); color: #fff; }
+.life-badge--favorite { background: var(--life-pin-favorite); color: #fff; }
 
 .life-country { margin: 1.4em 0 0.3em; font-size: 1em; }
 .life-places { margin-top: 0; }
@@ -29,12 +50,22 @@ html[data-theme="dark"] #ride-map .leaflet-tile-pane { filter: invert(1) hue-rot
 .life-empty { padding: 1.5em; text-align: center; border: 1px dashed var(--global-border-color); border-radius: 6px; color: var(--global-text-color-light); }
 
 /* Photography */
-.life-gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0.8em; margin-top: 1em; }
-.life-gallery__item { margin: 0; display: block; }
+.life-filters { display: flex; flex-wrap: wrap; gap: 0.4em; margin: 1em 0; }
+.life-filter { font: inherit; font-size: 0.75em; padding: 0.3em 0.9em; border-radius: 999px; cursor: pointer;
+               border: 1px solid var(--global-border-color); background: transparent; color: var(--global-text-color); }
+.life-filter span { color: var(--global-text-color-light); margin-left: 0.2em; }
+.life-filter.is-active { background: var(--global-base-color); border-color: var(--global-base-color); color: #fff; }
+.life-filter.is-active span { color: rgba(255,255,255,.8); }
+
+/* Masonry: photos keep their own shape */
+.life-gallery { columns: 3 220px; column-gap: 0.8em; }
+.life-gallery__item { margin: 0 0 0.9em; display: block; break-inside: avoid; }
+.life-gallery__item[hidden] { display: none; }
 .life-gallery__item a { display: block; overflow: hidden; border-radius: 4px; }
-.life-gallery__item img { display: block; width: 100%; margin: 0; border-radius: 0; aspect-ratio: 4 / 3; object-fit: cover; transition: transform 0.3s ease; }
-.life-gallery__item a:hover img { transform: scale(1.04); }
-.life-gallery__item figcaption { font-family: inherit; font-size: 0.7em; margin: 0.35em 0 0; padding: 0; color: var(--global-text-color-light); }
+.life-gallery__item img { display: block; width: 100%; height: auto; margin: 0; border-radius: 0; transition: transform 0.4s ease; }
+.life-gallery__item a:hover img { transform: scale(1.03); }
+.life-gallery__item figcaption { font-family: inherit; font-size: 0.68em; line-height: 1.35; margin: 0.35em 0 0; padding: 0; color: var(--global-text-color-light); }
+.life-gallery__item figcaption strong { color: var(--global-text-color); font-weight: 600; }
 
 .life-lightbox { position: fixed; inset: 0; z-index: 100000; background: rgba(10, 10, 10, 0.92); display: flex; align-items: center; justify-content: center; }
 .life-lightbox[hidden] { display: none; }
@@ -59,3 +90,13 @@ html[data-theme="dark"] #ride-map .leaflet-tile-pane { filter: invert(1) hue-rot
 .life-ride__numbers span { margin-right: 1.1em; white-space: nowrap; }
 .life-ride__swatch { display: inline-block; width: 0.8em; height: 0.8em; border-radius: 2px; margin-right: 0.4em; }
 @media (max-width: 600px) { .life-ride { flex-direction: column; } .life-ride__photo { width: 100%; max-height: 220px; } }
+
+/* Sports */
+.life-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1em; margin: 1em 0 1.5em; }
+.life-card { position: relative; border: 1px solid var(--global-border-color); border-radius: 6px; padding: 1em 1.1em; overflow: hidden; }
+.life-card h3 { margin: 0.1em 0 0.4em; font-size: 1.05em; }
+.life-card p { font-size: 0.85em; margin: 0.3em 0; }
+.life-card__icon { font-size: 1.6em; line-height: 1; color: var(--global-base-color); }
+.life-card--team { padding-top: 1.4em; }
+.life-card__stripe { position: absolute; inset: 0 0 auto 0; height: 6px; background: linear-gradient(90deg, var(--team-a) 0 50%, var(--team-b) 50% 100%); }
+.life-card__motto { font-weight: 600; color: var(--global-text-color-light); }

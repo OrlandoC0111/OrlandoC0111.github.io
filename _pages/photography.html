@@ -8,21 +8,28 @@ author_profile: true
 {% include base_path %}
 <link rel="stylesheet" href="{{ base_path }}/assets/css/life.css">
 
-<!-- TODO: say what you like to shoot and with what camera. -->
-<p>Photos I have taken around the world. Click any photo to see it larger; use the arrow keys to browse.</p>
+<p>Light I have chased around the world: city skylines at blue hour, fog rolling off the Pacific, and quiet corners of the places I have lived. Most of these were taken on a Nikon Z8. Click any photo to see it larger, and use the arrow keys to browse.</p>
 
 {% assign photos = site.data.photos.photos %}
 {% if photos.size == 0 %}
 <p class="life-empty">Photos coming soon.</p>
 {% else %}
+{% assign countries = photos | map: "country" | uniq %}
+<div class="life-filters" role="group" aria-label="Filter photos by country">
+  <button type="button" class="life-filter is-active" data-filter="all">All <span>{{ photos | size }}</span></button>
+  {% for c in countries %}{% assign n = photos | where: "country", c | size %}
+  <button type="button" class="life-filter" data-filter="{{ c | slugify }}">{{ c }} <span>{{ n }}</span></button>
+  {% endfor %}
+</div>
+
 <div class="life-gallery">
   {% for ph in photos %}
-  {% capture cap %}{% if ph.title %}{{ ph.title }}{% endif %}{% if ph.place %}{% if ph.title %} · {% endif %}{{ ph.place }}{% endif %}{% if ph.year %}, {{ ph.year }}{% endif %}{% endcapture %}
-  <figure class="life-gallery__item">
+  {% capture cap %}{{ ph.title }}{% if ph.place %}{% if ph.title %} · {% endif %}{{ ph.place }}{% endif %}{% if ph.year %}, {{ ph.year }}{% endif %}{% endcapture %}
+  <figure class="life-gallery__item" id="{{ ph.file | split: '.' | first }}" data-country="{{ ph.country | slugify }}">
     <a href="{{ base_path }}/images/photography/{{ ph.file }}" data-caption="{{ cap | strip | escape }}{% if ph.camera %} — {{ ph.camera | escape }}{% endif %}">
-      <img src="{{ base_path }}/images/photography/{{ ph.file }}" alt="{{ cap | strip | default: 'Photograph' | escape }}" loading="lazy">
+      <img src="{{ base_path }}/images/photography/thumbs/{{ ph.file }}" {% if ph.w %}width="{{ ph.w }}" height="{{ ph.h }}"{% endif %} alt="{{ cap | strip | default: 'Photograph' | escape }}" loading="lazy">
     </a>
-    {% if cap != "" %}<figcaption>{{ cap | strip }}</figcaption>{% endif %}
+    <figcaption><strong>{{ ph.title }}</strong>{% if ph.place %}<br>{{ ph.place }}{% if ph.year %}, {{ ph.year }}{% endif %}{% endif %}</figcaption>
   </figure>
   {% endfor %}
 </div>
