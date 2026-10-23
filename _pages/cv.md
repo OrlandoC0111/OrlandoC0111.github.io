@@ -15,29 +15,24 @@ redirect_from:
 Education
 ======
 * **Virginia Tech**, School of Plant and Environmental Sciences, Blacksburg, VA — January 2026–present <!-- TODO: add degree (M.S./Ph.D.) and program -->
-  * Graduate student, advisor: Dr. Huijie Gan
+  * Advisor: Dr. Huijie Gan
 * **Duke University School of Medicine**, Durham, NC — 2023–2025
-  * Master of Biostatistics (Mathematical Statistics track)
-  * Thesis: comparison of methods that control confounding between guide RNA and gene expression in single-cell CRISPR screens
-* **Cornell University**, Ithaca, NY — 2021–2023
-  * Bachelor's degree, Environment & Sustainability
-  * Honors thesis in soil microbiology, advisor: Dr. Janice E. Thies
-* **Zhejiang University**, Hangzhou, China — 2019–2021
-  * Agricultural Resources and Environmental Science
+  * Master of Biostatistics
+* **Zhejiang University** and **Cornell University** — 2019–2023
+  * Undergraduate degree in Environmental Science
+  * Honors thesis in soil microbiology, mentor: Dr. Janice Thies
 
 Research experience
 ======
-* **Graduate Researcher**, Virginia Tech, School of Plant and Environmental Sciences — Jan 2026–present
+* **Virginia Tech**, School of Plant and Environmental Sciences — January 2026–present
   * Advisor: Dr. Huijie Gan
-  * Soil environment and genotype effects on soybean rhizosphere bacterial communities across two Virginia field sites (16S rRNA amplicon sequencing, community assembly with iCAMP, mixed models)
-  * Remote sensing and drone (UAV) applications in agricultural research; machine learning for biological data
-* **Statistical Genetics Thesis Research**, Duke University School of Medicine — 2024–2025 <!-- TODO: confirm dates and advisor -->
-  * Compared methods (SCEPTRE, Biased Urn) for controlling confounding between guide RNA and gene expression in single-cell CRISPR screens; evaluated type I error and power
-* **Biostatistics Research, Electronic Health Records**, Duke University School of Medicine — 2023–2025 <!-- TODO: confirm dates, lab and PI -->
-  * Applied Bayesian latent class models and machine learning to EHR data (Duke PACE / Clinical Research Data Mart, SQL) to identify pain trajectories in breast cancer survivors
-* **Undergraduate Honors Research**, Cornell University, Soil and Crop Sciences — 2022–2023 <!-- TODO: confirm dates -->
-  * Advisor: Dr. Janice E. Thies
-  * How biochar amendment changes soil microbial communities and key soil exoenzyme activities in South Carolina and Oregon soils (sequencing, PCoA, PERMANOVA, generalized linear models)
+  * Remote sensing and drone applications in agricultural research, soil microbiology, and machine learning applications in biological research
+  * Soil environment and genotype effects on soybean rhizosphere bacterial communities at two Virginia field sites
+* **Duke University School of Medicine**, Department of Biostatistics & Bioinformatics — 2023–2025
+  * Statistical genetics
+  * Bayesian analysis of electronic health record (EHR) data
+* **Cornell University**, honors thesis in soil microbiology
+  * Mentor: Dr. Janice Thies
 
 Skills
 ======

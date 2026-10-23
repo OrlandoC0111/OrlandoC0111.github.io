@@ -7,11 +7,11 @@ redirect_from:
   - /about.html
 ---
 
-I grew up in Jinan, Shandong, China, and I work where statistics, machine learning and biology meet, from soil microbes to drone imagery of crop fields.
+I come from Jinan, Shandong, China, and I work where statistics, machine learning and biology meet, from soil microbes to drone imagery of crop fields.
 
-**Environmental science (2019–2023).** I earned bachelor's degrees in environmental science from [Zhejiang University](https://www.zju.edu.cn/english/) (Agricultural Resources and Environmental Science) and [Cornell University](https://www.cornell.edu/) (Environment & Sustainability). At Cornell I wrote an honors thesis in soil microbiology with [Dr. Janice Thies](https://cals.cornell.edu/people/janice-e-thies). It looked at how biochar changes soil microbial communities and the soil exoenzymes they produce.
+**Environmental Science (2019–2023).** I finished my undergraduate studies at [Zhejiang University](https://www.zju.edu.cn/english/) and [Cornell University](https://www.cornell.edu/), majoring in Environmental Science. My honors thesis was in soil microbiology, mentored by [Dr. Janice Thies](https://cals.cornell.edu/people/janice-e-thies).
 
-**Biostatistics (2023–2025).** I then completed a Master of Biostatistics (Mathematical Statistics track) at [Duke University School of Medicine](https://medschool.duke.edu/). There I worked on statistical genetics: my thesis compared methods that control confounding between guide RNA and gene expression in single-cell CRISPR screens. I also applied Bayesian latent class models and machine learning to electronic health records, to map the pain trajectories of breast cancer survivors.
+**Biostatistics (2023–2025).** I then went to [Duke University School of Medicine](https://medschool.duke.edu/) for my Master of Biostatistics, where I worked on statistical genetics and on Bayesian analysis of electronic health record (EHR) data.
 
 **Now at Virginia Tech (since January 2026).** I am in the [School of Plant and Environmental Sciences](https://spes.vt.edu/), working with [Dr. Huijie Gan](https://spes.vt.edu/). <!-- TODO: replace with Dr. Gan's lab or faculty page URL; add your degree program (M.S./Ph.D.) if you want it here -->
 My work combines soil microbiology, remote sensing and drone (UAV) applications in agricultural research, and machine learning for biological data. My current project asks how soil environment and plant genotype shape the bacterial communities around soybean roots, at two Virginia field sites with contrasting soils.
