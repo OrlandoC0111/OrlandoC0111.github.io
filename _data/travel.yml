@@ -14,13 +14,14 @@ states:
   United States of America:
     lived: [New York, North Carolina, Virginia]
     visited: [Massachusetts, Pennsylvania, District of Columbia, Washington, Oregon, Texas,
-              California, Georgia, Illinois, Wisconsin]
+              California, Georgia, Illinois, Wisconsin, Florida]
   Canada:
     visited: [Québec, Ontario, British Columbia]
   China:
     lived: [Shandong, Zhejiang]
     visited: [Beijing, Henan, Jiangsu, Fujian, Guangdong, Hunan, Hebei, Liaoning, Heilongjiang,
-              Jilin, Qinghai, Gansu, Ningxia, Tibet, Yunnan, Hainan]
+              Jilin, Qinghai, Gansu, Ningxia, Tibet, Yunnan, Hainan,
+              Inner Mongolia, Sichuan, Shanghai]
 
 # 3) Pins. lat/lon: right-click a spot in Google Maps and click the numbers to copy them.
 #    Photos in _data/photos.yml whose "at" matches a pin's name appear in its pop-up.
@@ -38,7 +39,18 @@ places:
   - {name: Chicago, region: Illinois, country: United States, lat: 41.8781, lon: -87.6298, status: visited}
   - {name: Madison, region: Wisconsin, country: United States, lat: 43.0731, lon: -89.4012, status: visited}
   - {name: Milwaukee, region: Wisconsin, country: United States, lat: 43.0389, lon: -87.9065, status: visited}
+  - {name: Austin, region: Texas, country: United States, lat: 30.2672, lon: -97.7431, status: visited}
+  - {name: Houston, region: Texas, country: United States, lat: 29.7604, lon: -95.3698, status: visited}
+  - {name: San Antonio, region: Texas, country: United States, lat: 29.4241, lon: -98.4936, status: visited}
+  - {name: Dallas, region: Texas, country: United States, lat: 32.7767, lon: -96.7970, status: visited}
+  - {name: Orlando, region: Florida, country: United States, lat: 28.5383, lon: -81.3792, status: visited}
+  - {name: Tampa, region: Florida, country: United States, lat: 27.9506, lon: -82.4572, status: visited}
+  - {name: Clearwater, region: Florida, country: United States, lat: 27.9659, lon: -82.8001, status: visited}
+  - {name: Miami, region: Florida, country: United States, lat: 25.7617, lon: -80.1918, status: visited}
+  - {name: Key West, region: Florida, country: United States, lat: 24.5551, lon: -81.7800, status: visited}
   - {name: Portland, region: Oregon, country: United States, lat: 45.5152, lon: -122.6784, status: visited}
+  - {name: Eugene, region: Oregon, country: United States, lat: 44.0521, lon: -123.0868, status: visited}
+  - {name: Bend, region: Oregon, country: United States, lat: 44.0582, lon: -121.3153, status: visited}
   - {name: Multnomah Falls, region: Oregon, country: United States, lat: 45.5762, lon: -122.1158, status: visited}
   - {name: Cannon Beach, region: Oregon, country: United States, lat: 45.8918, lon: -123.9615, status: visited}
   - {name: San Francisco, region: California, country: United States, lat: 37.7749, lon: -122.4194, status: visited}
@@ -55,6 +67,8 @@ places:
   - {name: Jinan, region: Shandong, country: China, lat: 36.6512, lon: 117.1201, status: born, note: Where I was born and grew up}
   - {name: Hangzhou, region: Zhejiang, country: China, lat: 30.2741, lon: 120.1551, status: lived, when: 2019–2021, note: Zhejiang University}
   - {name: Beijing, country: China, lat: 39.9042, lon: 116.4074, status: visited}
+  - {name: Shanghai, country: China, lat: 31.2304, lon: 121.4737, status: visited}
+  - {name: Chengdu, region: Sichuan, country: China, lat: 30.5728, lon: 104.0668, status: visited}
   - {name: Xiamen, region: Fujian, country: China, lat: 24.4475, lon: 118.0640, status: visited}
   - {name: Hong Kong, country: China, lat: 22.3193, lon: 114.1694, status: visited}
   # Taiwan
