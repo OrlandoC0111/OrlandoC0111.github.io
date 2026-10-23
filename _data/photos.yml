@@ -7,21 +7,36 @@
 #   country: used by the filter buttons
 photos:
   - {file: seattle-kerry-park.jpg, w: 900, h: 508, title: The Emerald City and Mount Rainier, place: "Kerry Park, Seattle", year: 2025, at: Seattle, country: United States, camera: Nikon Z8}
+  - {file: nyc-statue-of-liberty.jpg, w: 900, h: 600, title: Lady Liberty, place: New York Harbor, year: 2026, at: New York City, country: United States, camera: Nikon Z8}
   - {file: nyc-manhattan-bridge.jpg, w: 600, h: 900, title: Manhattan Bridge from DUMBO, place: "Brooklyn, New York", year: 2026, at: New York City, country: United States, camera: Nikon Z8}
   - {file: nyc-432-park-sunset.jpg, w: 600, h: 900, title: Last light on Midtown, place: "Manhattan, New York", year: 2026, at: New York City, country: United States, camera: Nikon Z8}
   - {file: ithaca-sage-hall.jpg, w: 600, h: 900, title: Sage Hall in summer, place: "Cornell University, Ithaca", year: 2026, at: Ithaca, country: United States, camera: Fujifilm X-T5}
+  - {file: blacksburg-bus-stop-night.jpg, w: 506, h: 900, title: Last bus on Prices Fork, place: "Blacksburg, Virginia", year: 2026, at: Blacksburg, country: United States, camera: Nikon Zf}
   - {file: yosemite-tunnel-view.jpg, w: 900, h: 600, title: Tunnel View, place: "Yosemite, California", year: 2025, at: Yosemite, country: United States, camera: Nikon Z8}
   - {file: big-sur.jpg, w: 600, h: 900, title: Where the mountains meet the Pacific, place: "Big Sur, California", year: 2025, at: Big Sur, country: United States, camera: Nikon Z8}
+  - {file: santa-cruz-sea-cave.jpg, w: 600, h: 900, title: Through the sea cave, place: "Shark Fin Cove, Santa Cruz County, California", year: 2025, at: Santa Cruz, country: United States, camera: Nikon Z8}
+  - {file: carmel-beach-chairs.jpg, w: 900, h: 600, title: Front-row seats to the Pacific, place: "Carmel-by-the-Sea, California", year: 2025, at: Carmel, country: United States, camera: Nikon Z8}
   - {file: oregon-haystack-rock.jpg, w: 900, h: 506, title: Haystack Rock, place: "Cannon Beach, Oregon", year: 2025, at: Cannon Beach, country: United States, camera: Nikon Z8}
   - {file: oregon-coast-fog.jpg, w: 900, h: 600, title: Sea fog on the Oregon Coast, place: "Cannon Beach, Oregon", year: 2025, at: Cannon Beach, country: United States, camera: Nikon Z8}
   - {file: oregon-multnomah-falls.jpg, w: 506, h: 900, title: Multnomah Falls, place: "Columbia River Gorge, Oregon", year: 2026, at: Multnomah Falls, country: United States, camera: Nikon Z8}
+  - {file: florida-palm-sunset.jpg, w: 600, h: 900, title: Palms on fire, place: "Key West, Florida", year: 2025, at: Key West, country: United States, camera: Nikon Z8}
+  - {file: key-west-cat.jpg, w: 600, h: 900, title: Afternoon nap, place: "Key West, Florida", year: 2025, at: Key West, country: United States, camera: Nikon Z8}
+  - {file: san-antonio-mission-san-juan.jpg, w: 634, h: 900, title: Mission San Juan Capistrano, place: "San Antonio Missions, Texas", year: 2025, at: San Antonio, country: United States, camera: Nikon Zf}
+  - {file: zoo-meerkat.jpg, w: 900, h: 899, title: On sentry duty, place: "San Antonio, Texas", year: 2025, at: San Antonio, country: United States, camera: Nikon Z8}
+  - {file: zoo-capybara.jpg, w: 900, h: 605, title: Capybara with a mouthful of hay, place: "San Antonio, Texas", year: 2025, at: San Antonio, country: United States, camera: Nikon Z8}
   - {file: quebec-chateau-frontenac.jpg, w: 600, h: 900, title: Château Frontenac at blue hour, place: "Québec City", year: 2026, at: Québec City, country: Canada, camera: Nikon Z8}
   - {file: quebec-petit-champlain.jpg, w: 900, h: 600, title: Petit-Champlain under winter lights, place: "Québec City", year: 2026, at: Québec City, country: Canada, camera: Nikon Z8}
+  - {file: quebec-golden-hour-street.jpg, w: 600, h: 900, title: Golden hour in the old town, place: Québec City, year: 2026, at: Québec City, country: Canada, camera: Nikon Z8}
   - {file: montreal-notre-dame.jpg, w: 900, h: 612, title: Notre-Dame Basilica, place: "Montréal", year: 2026, at: Montréal, country: Canada, camera: Nikon Z8}
+  - {file: montreal-oratory-dome.jpg, w: 655, h: 900, title: Saint Joseph's Oratory, place: Montréal, year: 2026, at: Montréal, country: Canada, camera: Nikon Z8}
+  - {file: montreal-oratory-night.jpg, w: 646, h: 900, title: Saint Joseph's Oratory by night, place: Montréal, year: 2026, at: Montréal, country: Canada, camera: Nikon Z8}
   - {file: montreal-mount-royal.jpg, w: 900, h: 600, title: Montréal from Mount Royal, place: "Montréal", year: 2026, at: Montréal, country: Canada, camera: Nikon Z8}
   - {file: toronto-cn-tower.jpg, w: 600, h: 900, title: CN Tower from Front Street, place: "Toronto", year: 2026, at: Toronto, country: Canada, camera: Nikon Zf}
   - {file: jinan-dusk.jpg, w: 900, h: 600, title: Dusk over my hometown, place: "Jinan, Shandong", year: 2025, at: Jinan, country: China, camera: Nikon Z8}
+  - {file: jinan-first-snow.jpg, w: 900, h: 600, title: "First snow, last leaves", place: "Jinan, Shandong", year: 2025, at: Jinan, country: China, camera: Nikon Zf}
+  - {file: hangzhou-zju-library.jpg, w: 600, h: 900, title: My old campus, place: "Zhejiang University, Hangzhou", year: 2025, at: Hangzhou, country: China, camera: Nikon Z8}
   - {file: xiamen-gulangyu.jpg, w: 900, h: 600, title: Red roofs of Gulangyu, place: "Xiamen, Fujian", year: 2025, at: Xiamen, country: China, camera: Nikon Z8}
+  - {file: xiamen-from-gulangyu.jpg, w: 900, h: 600, title: Xiamen across the strait, place: "Gulangyu, Xiamen, Fujian", year: 2025, at: Xiamen, country: China, camera: Nikon Z8}
   - {file: final-approach.jpg, w: 600, h: 900, title: Final approach over the temple roof, place: "Xiamen, Fujian", year: 2025, at: Xiamen, country: China, camera: Nikon Z8}
   - {file: taipei-101.jpg, w: 900, h: 599, title: Taipei 101 from Elephant Mountain, place: "Taipei", year: 2025, at: Taipei, country: Taiwan, camera: Nikon Z8}
   - {file: taiwan-alishan-railway.jpg, w: 600, h: 900, title: Alishan Forest Railway in the mist, place: "Alishan", year: 2025, at: Alishan, country: Taiwan, camera: Nikon Z8}

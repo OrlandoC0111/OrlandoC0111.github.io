@@ -54,6 +54,8 @@ places:
   - {name: Multnomah Falls, region: Oregon, country: United States, lat: 45.5762, lon: -122.1158, status: visited}
   - {name: Cannon Beach, region: Oregon, country: United States, lat: 45.8918, lon: -123.9615, status: visited}
   - {name: San Francisco, region: California, country: United States, lat: 37.7749, lon: -122.4194, status: visited}
+  - {name: Santa Cruz, region: California, country: United States, lat: 37.0127, lon: -122.1878, status: visited, note: Shark Fin Cove}
+  - {name: Carmel, region: California, country: United States, lat: 36.5552, lon: -121.9233, status: visited}
   - {name: Big Sur, region: California, country: United States, lat: 36.3615, lon: -121.8563, status: visited}
   - {name: Yosemite, region: California, country: United States, lat: 37.7156, lon: -119.6767, status: visited}
   - {name: Los Angeles, region: California, country: United States, lat: 34.0522, lon: -118.2437, status: visited}
