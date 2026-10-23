@@ -12,7 +12,7 @@ photos:
   - {file: nyc-432-park-sunset.jpg, w: 600, h: 900, title: Last light on Midtown, place: "Manhattan, New York", year: 2026, at: New York City, country: United States, camera: Nikon Z8}
   - {file: ithaca-sage-hall.jpg, w: 600, h: 900, title: Sage Hall in summer, place: "Cornell University, Ithaca", year: 2026, at: Ithaca, country: United States, camera: Fujifilm X-T5}
   - {file: blacksburg-bus-stop-night.jpg, w: 506, h: 900, title: Last bus on Prices Fork, place: "Blacksburg, Virginia", year: 2026, at: Blacksburg, country: United States, camera: Nikon Zf}
-  - {file: nc-coast-pier.jpg, w: 900, h: 600, title: Standing in the surf, place: North Carolina coast, year: 2025, country: United States, camera: Nikon Z8}
+  - {file: wrightsville-beach-pier.jpg, w: 900, h: 593, title: Standing in the surf, place: "Wrightsville Beach, Wilmington, North Carolina", year: 2025, at: Wrightsville Beach, country: United States, camera: Nikon Z8}
   - {file: yosemite-tunnel-view.jpg, w: 900, h: 600, title: Tunnel View, place: "Yosemite, California", year: 2025, at: Yosemite, country: United States, camera: Nikon Z8}
   - {file: big-sur.jpg, w: 600, h: 900, title: Where the mountains meet the Pacific, place: "Big Sur, California", year: 2025, at: Big Sur, country: United States, camera: Nikon Z8}
   - {file: santa-cruz-sea-cave.jpg, w: 600, h: 900, title: Through the sea cave, place: "Shark Fin Cove, Santa Cruz County, California", year: 2025, at: Santa Cruz, country: United States, camera: Nikon Z8}
@@ -33,10 +33,10 @@ photos:
   - {file: montreal-oratory-night.jpg, w: 646, h: 900, title: Saint Joseph's Oratory by night, place: Montréal, year: 2026, at: Montréal, country: Canada, camera: Nikon Z8}
   - {file: montreal-mount-royal.jpg, w: 900, h: 600, title: Montréal from Mount Royal, place: "Montréal", year: 2026, at: Montréal, country: Canada, camera: Nikon Z8}
   - {file: toronto-cn-tower.jpg, w: 600, h: 900, title: CN Tower from Front Street, place: "Toronto", year: 2026, at: Toronto, country: Canada, camera: Nikon Zf}
-  - {file: vancouver-gastown-steam-clock.jpg, w: 600, h: 900, title: Gastown Steam Clock in the rain, place: "Gastown, Vancouver", year: 2025, at: Vancouver, country: Canada, camera: Nikon Z8}
-  - {file: vancouver-harbour-centre.jpg, w: 860, h: 900, title: Harbour Centre at blue hour, place: Downtown Vancouver, year: 2025, at: Vancouver, country: Canada, camera: Nikon Z8}
-  - {file: vancouver-lost-lagoon.jpg, w: 900, h: 600, title: West End reflections, place: "Lost Lagoon, Stanley Park, Vancouver", year: 2025, at: Vancouver, country: Canada, camera: Nikon Z8}
-  - {file: snowy-forest-trail.jpg, w: 600, h: 900, title: Snowy trail on the North Shore, place: "North Shore mountains, Vancouver", year: 2025, at: Vancouver, country: Canada, camera: Nikon Z8}
+  - {file: vancouver-gastown-steam-clock.jpg, w: 595, h: 900, title: Gastown Steam Clock in the rain, place: "Gastown, Vancouver", year: 2025, at: Vancouver, country: Canada, camera: Nikon Z8}
+  - {file: vancouver-harbour-centre.jpg, w: 858, h: 900, title: Harbour Centre at blue hour, place: Downtown Vancouver, year: 2025, at: Vancouver, country: Canada, camera: Nikon Z8}
+  - {file: vancouver-lost-lagoon.jpg, w: 900, h: 593, title: West End reflections, place: "Lost Lagoon, Stanley Park, Vancouver", year: 2025, at: Vancouver, country: Canada, camera: Nikon Z8}
+  - {file: grouse-mountain-snow-trail.jpg, w: 594, h: 900, title: Snowy trail on Grouse Mountain, place: "Grouse Mountain, North Vancouver", year: 2025, at: Grouse Mountain, country: Canada, camera: Nikon Z8}
   - {file: jinan-dusk.jpg, w: 900, h: 600, title: Dusk over my hometown, place: "Jinan, Shandong", year: 2025, at: Jinan, country: China, camera: Nikon Z8}
   - {file: jinan-first-snow.jpg, w: 900, h: 600, title: "First snow, last leaves", place: "Jinan, Shandong", year: 2025, at: Jinan, country: China, camera: Nikon Zf}
   - {file: mount-tai-ginkgo-roof.jpg, w: 900, h: 600, title: Ginkgo over temple tiles, place: "Mount Tai, Shandong", year: 2025, at: Mount Tai, country: China, camera: Nikon Z8}

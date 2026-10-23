@@ -28,6 +28,9 @@ states:
 places:
   # United States
   - {name: Ithaca, region: New York, country: United States, lat: 42.4440, lon: -76.5019, status: lived, when: 2021–2023, note: Cornell University}
+  - {name: Raleigh, region: North Carolina, country: United States, lat: 35.7796, lon: -78.6382, status: visited}
+  - {name: Charlotte, region: North Carolina, country: United States, lat: 35.2271, lon: -80.8431, status: visited}
+  - {name: Wrightsville Beach, region: North Carolina, country: United States, lat: 34.2085, lon: -77.7964, status: visited, note: Near Wilmington}
   - {name: Chapel Hill, region: North Carolina, country: United States, lat: 35.9132, lon: -79.0558, status: lived, when: 2023–2025, note: My Duke years}
   - {name: Blacksburg, region: Virginia, country: United States, lat: 37.2296, lon: -80.4139, status: lived, when: 2026–present, note: Virginia Tech}
   - {name: Seattle, region: Washington, country: United States, lat: 47.6062, lon: -122.3321, status: favorite}
@@ -65,6 +68,7 @@ places:
   - {name: Québec City, region: Québec, country: Canada, lat: 46.8139, lon: -71.2080, status: visited}
   - {name: Toronto, region: Ontario, country: Canada, lat: 43.6532, lon: -79.3832, status: visited}
   - {name: Vancouver, region: British Columbia, country: Canada, lat: 49.2827, lon: -123.1207, status: visited}
+  - {name: Grouse Mountain, region: British Columbia, country: Canada, lat: 49.3800, lon: -123.0815, status: visited, note: North Vancouver}
   # China
   - {name: Jinan, region: Shandong, country: China, lat: 36.6512, lon: 117.1201, status: born, note: Where I was born and grew up}
   - {name: Mount Tai, region: Shandong, country: China, lat: 36.2547, lon: 117.1008, status: visited, note: 泰山}
