@@ -13,7 +13,7 @@ I grew up in Jinan, Shandong, China, and I work where statistics, machine learni
 
 **Biostatistics (2023–2025).** I then completed a Master of Biostatistics (Mathematical Statistics track) at [Duke University School of Medicine](https://medschool.duke.edu/). There I worked on statistical genetics: my thesis compared methods that control confounding between guide RNA and gene expression in single-cell CRISPR screens. I also applied Bayesian latent class models and machine learning to electronic health records, to map the pain trajectories of breast cancer survivors.
 
-**Now at Virginia Tech.** I am in the [School of Plant and Environmental Sciences](https://spes.vt.edu/), working with [Dr. Huijie Gan](https://spes.vt.edu/). <!-- TODO: replace with Dr. Gan's lab or faculty page URL; add your degree program (M.S./Ph.D.) if you want it here -->
+**Now at Virginia Tech (since January 2026).** I am in the [School of Plant and Environmental Sciences](https://spes.vt.edu/), working with [Dr. Huijie Gan](https://spes.vt.edu/). <!-- TODO: replace with Dr. Gan's lab or faculty page URL; add your degree program (M.S./Ph.D.) if you want it here -->
 My work combines soil microbiology, remote sensing and drone (UAV) applications in agricultural research, and machine learning for biological data. My current project asks how soil environment and plant genotype shape the bacterial communities around soybean roots, at two Virginia field sites with contrasting soils.
 
 Research interests
