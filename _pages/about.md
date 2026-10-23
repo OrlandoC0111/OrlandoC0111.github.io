@@ -38,4 +38,4 @@ Beyond the lab
 ------
 Away from the screen and the field plots, you will most likely find me on my road bike. Blacksburg is a playground for it: empty farm roads that roll on forever, long climbs into the Blue Ridge, and descents fast enough to make every one of those climbs worth it. I love all of it: the cold early start, the steady grind up a mountain, and the moment the road tips downhill and the wind takes over.
 
-A camera usually comes along, on rides and on trips, because the best light shows up when you least expect it. I keep a map of everywhere I've been in [Ten Thousand Miles](/travel/), a [gallery of photos](/photography/) from the road, and my rides, pickup games and the teams I cheer for in [Sports](/sports/).
+A camera usually comes along, on rides and on trips, because the best light shows up when you least expect it. I keep a map of everywhere I've been in [Ten Thousand Miles](/travel/), the photos I take along the way in [Light & Shadow](/photography/), and my rides, pickup games and the teams I cheer for in [Ride the Wind](/sports/).

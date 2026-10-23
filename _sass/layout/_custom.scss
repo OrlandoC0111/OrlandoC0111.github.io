@@ -1,0 +1,41 @@
+/* ==========================================================================
+   Site-specific typography: a bold display serif for names and headings,
+   Inter for everything you read
+   ========================================================================== */
+
+.masthead__menu-item--lg a,
+.page__title,
+.sidebar .author__name {
+  font-family: $header-font-family;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.masthead__menu-item--lg a {
+  font-size: 1.15em;
+}
+
+.page__content {
+  h1, h2, h3 {
+    font-family: $header-font-family;
+    font-weight: 700;
+    letter-spacing: -0.005em;
+  }
+}
+
+.masthead__menu-item a {
+  font-weight: 500;
+}
+
+[lang="zh"] {
+  font-family: "Noto Serif SC", "Songti SC", "SimSun", serif;
+  font-style: normal;
+}
+
+.research-toc {
+  margin: 0.5em 0 1.5em;
+  font-size: $type-size-6;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
