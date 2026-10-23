@@ -13,7 +13,7 @@ I come from Jinan, Shandong, China, and I work where statistics, machine learnin
 
 **Biostatistics (2023–2025).** I then went to [Duke University School of Medicine](https://medschool.duke.edu/) for my Master of Biostatistics, where I worked on statistical genetics and on Bayesian analysis of electronic health record (EHR) data.
 
-**Now at Virginia Tech (since January 2026).** I am in the [School of Plant and Environmental Sciences](https://spes.vt.edu/), working with [Dr. Huijie Gan](https://spes.vt.edu/). <!-- TODO: replace with Dr. Gan's lab or faculty page URL; add your degree program (M.S./Ph.D.) if you want it here -->
+**Now at Virginia Tech (since January 2026).** I am a Ph.D. student in the [School of Plant and Environmental Sciences](https://spes.vt.edu/), working with [Dr. Huijie Gan](https://spes.vt.edu/). <!-- TODO: replace with Dr. Gan's lab or faculty page URL -->
 My work combines soil microbiology, remote sensing and drone (UAV) applications in agricultural research, and machine learning for biological data. My current project asks how soil environment and plant genotype shape the bacterial communities around soybean roots, at two Virginia field sites with contrasting soils.
 
 Research interests

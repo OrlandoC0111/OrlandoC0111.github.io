@@ -100,3 +100,7 @@ html[data-theme="dark"] #ride-map .leaflet-tile-pane { filter: invert(1) hue-rot
 .life-card--team { padding-top: 1.4em; }
 .life-card__stripe { position: absolute; inset: 0 0 auto 0; height: 6px; background: linear-gradient(90deg, var(--team-a) 0 50%, var(--team-b) 50% 100%); }
 .life-card__motto { font-weight: 600; color: var(--global-text-color-light); }
+
+.btn--strava { display: inline-block; background: #fc4c02; color: #fff !important; border-radius: 999px; padding: 0.45em 1.1em; font-size: 0.85em; text-decoration: none !important; }
+.btn--strava:hover { background: #e34402; }
+.btn--strava i { margin-right: 0.35em; }

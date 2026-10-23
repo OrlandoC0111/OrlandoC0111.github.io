@@ -14,7 +14,8 @@ redirect_from:
 
 Education
 ======
-* **Virginia Tech**, School of Plant and Environmental Sciences, Blacksburg, VA — January 2026–present <!-- TODO: add degree (M.S./Ph.D.) and program -->
+* **Virginia Tech**, School of Plant and Environmental Sciences, Blacksburg, VA — January 2026–present
+  * Ph.D. student
   * Advisor: Dr. Huijie Gan
 * **Duke University School of Medicine**, Durham, NC — 2023–2025
   * Master of Biostatistics
